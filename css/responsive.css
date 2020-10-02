@@ -1,0 +1,364 @@
+@media screen and (max-width: 600px){
+
+    #header{
+        padding: 20px 0;
+    }
+    #header .logo {
+        margin-left: 30px;
+    }
+    #header .logo h2{
+    
+        font-size: 25px;
+    }
+    #header.head{
+        padding: 6px 0;
+    }
+    #header .logo  span{
+        font-size: 35px;
+    }
+    #header .ham_menu{
+        display: inline-block;
+    }
+    #header .nav{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    #header .nav ul{
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        display: none;
+    }
+    #header .nav ul li{
+        margin: 0;
+        padding: 11px 0;
+        border-bottom: 1px solid silver;
+    }
+    #header .nav ul li a{
+        color: black;
+    }
+    #header .nav ul li:hover::before{
+        transform: scale(0);
+    }
+    #front-page{
+        background: linear-gradient(to left,rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)),url("../img/coding-mini.jpg");
+        background-position: center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
+    }
+    #front-page svg{
+        bottom: -1px;
+    }
+    #front-page .img{
+        display: none;
+    }
+    #front-page .front-content{
+        left: 8%;
+        top: 40%;
+        width: 90%;
+    }
+    #front-page .front-content h1{
+        font-size: 25px;
+    }
+    #front-page .front-content h1 span{
+        font-size: 28px;
+    }
+    #front-page .front-content h2 span{
+        font-size: 27px;
+    }
+    #front-page a{
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    #front-page #clock{
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #front-page #clock #time div span{
+        width: 48px;
+        height: 48px;
+        font-size: 1.4em;
+    }
+    #front-page #clock #time div span:nth-child(2){
+        height: 18px;
+    }
+    #front-page #clock #time div:nth-last-child(1) span{
+        width: 48px;
+        height: 27px;
+        margin-top: 39px;
+        font-size: 1em;
+    }
+    #front-page #clock #time div span:nth-child(2){
+        font-size: .48em;
+        letter-spacing: 0;
+    }
+    #about h1{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    #about h1::before{
+        width: 80px;
+    }
+    #about .details{
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #about .details .left{
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #about .details .left::before{
+        height: 100%;
+    }
+    #about .details .right{
+        width: 100%;
+    }
+    #about .details .right img{
+        width: 80%;
+        
+    }
+    #about .details_2{
+       height: auto;
+       flex-direction: column;
+       margin-top: 40px;
+    }
+    #about .details_2 .left{
+        width: 80%;
+        margin-left: 10px;
+        font-size: 17px;
+        margin-bottom: 23px;
+    }
+    #about .details_2 .left::before{
+        height: 100%;
+    }
+    #about .details_2 .right{
+        width: 80%;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    #about .details_2 .right::before{
+        height: 100%;
+    }
+    #skill{
+        margin-top: 50px;
+    }
+    #skill h1{
+        font-size: 28px;
+    }
+    #skill .h1::before{
+        width: 100px;
+    }
+    #skill .skill_content{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #skill .skill_content .skill_left{
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    #skill .skill_content .skill_left p{
+        font-size: 17px;
+    }
+    #skill .skill_content .skill_left h2{
+        font-size: 22px;
+    }
+    #skill .skill_content .skill_left a{
+        padding: 8px 18px;
+        font-size: 17px;
+    }
+    #skill .skill_content .skill_right{
+        margin-right: 0;
+        width: 90%;
+    }
+    #skill .skill_content .skill_right h2{
+        font-size: 22px;
+    }
+    .barfiller{
+        height: 10px;
+    }
+    #skill .skill_content .skill_right .bar-wrap .bar label{
+        font-size: 17px;
+    }
+    #service .header h3{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    #service .header h3::before{
+        width: 80px;
+    }
+    #gallery{
+        height: 500px;
+        margin-top: -1px;
+    }
+    #gallery h1{
+        font-size: 30px;
+        
+    }
+    #gallery .gallery_box{
+        width: 100px;
+        height: 100px;
+    }
+    #gallery .gallery_box span{
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(190px);
+    }
+    #portfolio svg{
+        top: -2px;
+    }
+    #portfolio h1{
+        padding-top: 40px;
+    }
+    #portfolio .port_content{
+        margin-top: 0px;
+    }
+    #portfolio .port_content .itemBox{
+        margin-bottom: 5px;
+        height: 220px;
+    }
+    #counter .count_header{
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    #counter .count_wrap .count_box{
+        margin-bottom: 0;
+    }
+    #counter .count_wrap{
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    #clients{
+        background: linear-gradient(to  left,rgba(0,0,0,.8),rgba(0,0,0,.8)   ),url("../img/computer_work-mini.jpg");
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    #clients svg{
+        top: -1px;
+    }
+    #clients h1{
+        font-size: 30px;
+    }
+    #clients .owl-carousel{
+        width: 100%;
+    }
+    #clients .owl-carousel div{
+        text-align: center;
+        width: 90%;
+    }
+    #clients .owl-carousel .owl-nav .owl-prev{
+        left:0px;
+    }
+    #clients .owl-carousel .owl-nav .owl-next{
+        right:0;
+    }
+    #service svg{
+        top: -1px;
+    }
+    #contact{
+        align-items: flex-start;
+    }
+    #contact .contact_conainer{
+        width: 100%;
+        height: 950px;
+    }
+    #contact .contact_conainer .contact_info{
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 400px;
+    }
+    #contact .contact_conainer .contact_info h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    #contact .contact_conainer .contact_info .info li span:nth-child(1){
+        font-size: 22px;
+    }
+    #contact .contact_conainer .contact_info .info li:nth-child(1) span:nth-child(1){
+        font-size: 28px;
+    }
+    #contact .contact_conainer .contact_info .info li span:nth-child(2){
+        font-size: 17px;
+    }
+    #contact .contact_conainer .contact_info .sci li a{
+        font-size: 22px;
+    }
+    #contact .contact_conainer .contact_form{
+        top: 400px;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        margin: 0;
+        padding: 0;
+    }
+    #contact .contact_conainer .contact_form h2{
+        font-weight: 500;
+        font-size: 30px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox{
+        width: 100%;
+        
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox.w50{
+        width: 100%;
+    }
+    #contact .contact_conainer .contact_form .formBox{
+        padding: 20px 20px;
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox textarea,
+    #contact .contact_conainer .contact_form .formBox .inputBox input{
+        font-size: 18px;
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox label{
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox textarea:focus ~ label, 
+    #contact .contact_conainer .contact_form .formBox .inputBox input:focus ~  label, #contact .contact_conainer .contact_form .formBox .inputBox textarea:valid ~ label, 
+    #contact .contact_conainer .contact_form .formBox .inputBox input:valid ~  label{
+        font-size: 15px;
+    }
+    #contact .contact_conainer .contact_form .formBox .inputBox input[type="submit"]{
+        font-size: 18px;
+    }
+    #footer{
+      height: 100px;
+    }
+    .loader ul li{
+        width: 30px;
+        height: 30px;
+    }
+    #gotop{
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+    #gotop.gotop_btn{
+        bottom: 40px;
+    }
+    #side_social{
+        visibility: hidden;
+    }
+    #calculator{
+        visibility: hidden;
+    }
+}
