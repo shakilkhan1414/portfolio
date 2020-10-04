@@ -214,6 +214,9 @@
     #gallery .gallery_box span{
         transform: rotateY(calc(var(--i)*45deg)) translateZ(190px);
     }
+    #portfolio{
+        margin-bottom: 40px;
+    }
     #portfolio svg{
         top: -2px;
     }

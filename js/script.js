@@ -88,7 +88,7 @@ $(document).ready(function(){
    // })
     setTimeout(function(){
         $(".loader").fadeOut();
-    },2000)
+    },0000)
 
 
     $("#header .nav ul li").click(function(){

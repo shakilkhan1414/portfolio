@@ -805,6 +805,7 @@ box-shadow: 10px 10px 16px -3px rgba(0,0,0,0.75);
     padding-top: 80px;
     font-size: 35px;
     position: relative;
+    letter-spacing: 1px;
 }
 #portfolio h1::before{
     content: "";
@@ -899,6 +900,7 @@ box-shadow: 10px 10px 16px -3px rgba(0,0,0,0.75);
     width: 100%;
     min-height:370px;
     background-color: white;
+    margin-top: 20px;
 }
 #counter .count_header{
     text-align: center;
@@ -1571,4 +1573,54 @@ box-shadow: 10px 10px 16px -3px rgba(0,0,0,0.75);
 }
 #calculator .calculator span.equal{
    background: #03b1ff;
+}
+#hire{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to left,rgba(0,0,0,.8),rgba(0,0,0,.8)),url("../img/handshake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hire div h1{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#hire div a{
+    color: black;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 15px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid white;
+    transition: color .5s ease;
+    overflow: hidden;
+}
+#hire div a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: transform .5s ease;
+}
+#hire div a:hover{
+    color: white;
+}
+#hire div a:hover::before{
+    transform: translateY(0%);
 }
