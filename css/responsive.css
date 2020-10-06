@@ -368,4 +368,12 @@
     #calculator{
         visibility: hidden;
     }
+    #clock{
+        top: 45%;
+    }
+    #clock .clk{
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
 }
