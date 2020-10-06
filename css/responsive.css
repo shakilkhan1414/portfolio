@@ -50,16 +50,20 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-attachment: scroll;
+        min-height: 110vh;
     }
     #front-page svg{
         bottom: -1px;
     }
     #front-page .img{
-        display: none;
+        width: 48%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -60px;
     }
     #front-page .front-content{
         left: 8%;
-        top: 40%;
+        top: 25%;
         width: 90%;
     }
     #front-page .front-content h1{

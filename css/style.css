@@ -133,7 +133,7 @@
 #front-page .img{
     width: 17%;
     position: absolute;
-    left: 19%;
+    left: 21%;
     bottom: 0;
     overflow: hidden;
 }
@@ -148,7 +148,7 @@
     text-align: left;
     position: absolute;
     top: 28%;
-    left: 44%;
+    left: 48%;
 }
 #front-page .front-content h1{
     color: white;
@@ -262,22 +262,58 @@
         transform: translateY(-100%);
     }
 }
-#front-page #clock{
-    position: absolute;
+#clock{
+    position: fixed;
     right: 0;
     top: 30%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 1s ease;
 }
-#front-page #clock #time{
+#clock.active{
+    transform: translateX(0);
+}
+#clock.active .clk{
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+}
+#clock.active .clk i{
+    transform: rotate(0deg);
+}
+#clock .clk i{
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+}
+#clock .clk{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50px;
+    transform: translate(-100%,-50%);
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff006a;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#clock #time{
     display: flex;
 }
-#front-page #clock #time div{
+#clock #time div{
     margin: 1px;
     position: relative;
     -webkit-box-reflect: below 0px linear-gradient(transparent,#0004);
     -moz-box-reflect: below 0px linear-gradient(transparent,#0004);
     -o-box-reflect: below 0px linear-gradient(transparent,#0004);
 }   
-#front-page #clock #time div span{
+#clock #time div span{
     position: relative;
     display: block;
     width: 50px;
@@ -291,7 +327,7 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
     font-size: 1.5em;
 }
-#front-page #clock #time div span:nth-child(2)
+#clock #time div span:nth-child(2)
 {
     height: 20px;
     font-size: 0.5em;
@@ -300,14 +336,14 @@
     background: #127fd6;
     font-weight: bold;
 }
-#front-page #clock #time div:nth-last-child(2) span{
+#clock #time div:nth-last-child(2) span{
     background: #ff006a;
 }
-#front-page #clock #time div:nth-last-child(2) span:nth-child(2){
+#clock #time div:nth-last-child(2) span:nth-child(2){
     background: #ec0062;
     
 }
-#front-page #clock #time div:nth-last-child(1) span{
+#clock #time div:nth-last-child(1) span{
     font-size: 1em;
     margin-top: 40px;
     width: 50px;
@@ -1503,7 +1539,7 @@ box-shadow: 10px 10px 16px -3px rgba(0,0,0,0.75);
     height: 400px;
     width: 240px;
     position: fixed;
-    z-index: 100;
+    z-index: 1001;
     top: 50%;
     right: 0;
     transform: translate(245px,-50%);

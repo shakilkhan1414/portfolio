@@ -88,7 +88,7 @@ $(document).ready(function(){
    // })
     setTimeout(function(){
         $(".loader").fadeOut();
-    },2000)
+    },000)
 
 
     $("#header .nav ul li").click(function(){
@@ -105,6 +105,17 @@ $(document).ready(function(){
         {
             $("#calculator").removeClass("active");
             $("#calculator .cal_btn").removeClass("active");
+        }
+    })
+
+    $("#clock .clk").on("click",function(){
+        $("#clock").toggleClass("active");
+    })
+
+    $(window).on("scroll",function(){
+        if(scrollY)
+        {
+            $("#clock").removeClass("active");
         }
     })
 
