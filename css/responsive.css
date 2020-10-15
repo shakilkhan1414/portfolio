@@ -55,10 +55,7 @@
         bottom: -1px;
     }
     #front-page .img{
-        width: 48%;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -60px;
+       
         display: none;
     }
     #front-page .front-content{
